@@ -1,0 +1,18 @@
+DROP SCHEMA IF EXISTS `message` ;
+CREATE SCHEMA IF NOT EXISTS `message` default character set gbk;
+USE `message` ;
+
+Create table Smess(
+	no	char(9),
+	name	char(20),
+	sex	char(2),
+	age	smallint,
+	class	char(5),
+	Primary  key(no));
+
+insert into Smess   values('171110045','刘','女','20',1701);
+insert into Smess   values('171110046','关','男','21',1701);
+insert into Smess   values('171110047','张','女','19',1702);
+insert into Smess   values('171110048','赵','女','21',1705);
+insert into Smess   values('171110049','江','女','20',1702);
+insert into Smess   values('171110050','何','男','22',1707);
